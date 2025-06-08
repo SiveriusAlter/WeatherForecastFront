@@ -1,0 +1,18 @@
+.host {
+    margin: 16px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--default-dark-color);
+}
+
+.passwords {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.privacy-text {
+    color: var(--secondary-light-color);
+}

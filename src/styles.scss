@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --paper-light-color: #ffffff;
+    --paper-dark-color: #424242;
+    --default-light-color: #fafafa;
+    --default-dark-color: #303030;
+    --primary-main-color: #651fff;
+    --primary-light-color: #d1c4e9;
+    --primary-dark-color: #311b92;
+    --secondary-main-color: #00e5ff;
+    --secondary-light-color: #84ffff;
+    --secondary-dark-color: #006064;
+    --accent-main-color: #ff4081;
+    --accent-light-color: #f8bbd0;
+    --accent-dark-color: #d81b60;
+    --text-primary-color: #ffffff;
+
+}
+
+.authority-button {
+    height: 48px;
+    background-color: var(--primary-main-color);
+    color: var(--paper-light-color);
+    border: none;
+    border-radius: 38px;
+    margin: 16px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+
+    &:active,
+    &:hover,
+    &:focus-visible {
+        background-color: var(--primary-dark-color);
+    }
+}
+
+.text-input {
+    height: 48px;
+    border: 2px solid var(--paper-light-color);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 0px 16px;
+    background-color: var(--default-dark-color);
+    color: var(--text-primary-color);
+    outline: none;
+
+    &:active,
+    &:hover,
+    &:focus-visible {
+        border-color: var(--secondary-main-color);
+    }
+}
