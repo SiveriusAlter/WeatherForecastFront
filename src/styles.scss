@@ -16,6 +16,15 @@
 
 }
 
+body {
+  background: var(--default-dark-color);
+}
+
+h1 {
+  color: var(--paper-light-color);
+  text-align: center;
+}
+
 .authority-button {
     height: 48px;
     background-color: var(--primary-main-color);
@@ -39,7 +48,7 @@
     border: 2px solid var(--paper-light-color);
     border-radius: 8px;
     margin: 8px;
-    padding: 0px 16px;
+    padding: 0 16px;
     background-color: var(--default-dark-color);
     color: var(--text-primary-color);
     outline: none;
@@ -49,4 +58,10 @@
     &:focus-visible {
         border-color: var(--secondary-main-color);
     }
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: var(--default-dark-color);
 }

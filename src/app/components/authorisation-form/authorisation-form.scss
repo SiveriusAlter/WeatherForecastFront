@@ -1,0 +1,18 @@
+.host {
+  margin: 16px;
+}
+
+.authorisation-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--default-dark-color);
+}
+
+.password {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.privacy-text {
+  color: var(--secondary-light-color);
+}
