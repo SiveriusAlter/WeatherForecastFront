@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
-  imports: [],
+  imports: [
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './top-bar.html',
   styleUrl: './top-bar.scss'
 })
 export class TopBar {
-
+  authorisationLink='authorisation';
+  registrationLink='registration';
+  homeLink='home';
 }

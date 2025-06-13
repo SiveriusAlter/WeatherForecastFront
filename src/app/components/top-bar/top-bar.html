@@ -1,5 +1,5 @@
 <div class="top-bar">
-  <h1>Weather</h1>
-  <button class="authority-button">Sign In</button>
-  <button class="authority-button">Sign Up</button>
+  <h1><a [routerLink]="homeLink" routerLinkActive="active">Weather</a></h1>
+  <button class="authority-button" [routerLink]="[authorisationLink]" routerLinkActive="active">Sign In</button>
+  <button class="authority-button" [routerLink]="[registrationLink]" routerLinkActive="active">Sign Up</button>
 </div>

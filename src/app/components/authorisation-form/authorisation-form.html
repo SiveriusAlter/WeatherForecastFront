@@ -1,10 +1,13 @@
-<form class="authorisation-form">
+<form class="authorisation-form"
+[formGroup]="form"
+(ngSubmit)="onSubmit()">
   <h1>Sign In</h1>
-  <input type = "text" class="text-input">
+  <input type = "text" class="text-input"
+         formControlName="username" placeholder="Login or email">
   <div class="password">
-    <input type = "text" class="text-input">
+    <input type = "text" class="text-input"
+           formControlName="password" placeholder="Password">
   </div>
-  <button class="authority-button">CONTINUE</button>
-  <a><span class="privacy-text">Already have an account? Sign in here</span></a>
+  <button class="authority-button" type="submit">CONTINUE</button>
 </form>
 

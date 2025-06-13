@@ -1,0 +1,18 @@
+<form class="registration-form"
+[formGroup]="form"
+(ngSubmit) = "onSubmit()">
+  <h1>Sign Up</h1>
+    <input type = "text" class="text-input"
+    formControlName="login" placeholder="Login or password">
+    <div class="passwords">
+    <input type = "text" class="text-input"
+    formControlName="password" placeholder="Password">
+    <input type = "text" class="text-input"
+    formControlName="repeatPassword" placeholder="Repeat password">
+    </div>
+    <div>
+        <input type = "checkbox" class="checkbox-input">
+        <a><span class="privacy-text">I have read and accept the Terms of Service & Privacy Policy *</span></a>
+    </div>
+    <button class="authority-button" type = "submit">CONTINUE</button>
+</form>

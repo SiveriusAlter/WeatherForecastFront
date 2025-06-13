@@ -1,3 +1,11 @@
 :host {
-  background: var(--default-dark-color);
+  margin: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 48px;
 }
